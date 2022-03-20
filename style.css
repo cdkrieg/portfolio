@@ -1,0 +1,38 @@
+
+
+header {
+   
+    background-color: darkgreen;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(240, 229, 229);
+}
+
+body {
+    width: 1480px;
+    height: 3646px;
+    opacity: 0.82;
+    background-image: url("background trees.jpg");
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+}
+
+li a{
+    display: inline;
+    padding: 18px;
+    color: rgb(240, 229, 229);
+    font-family: 'Brush Script MT', cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
