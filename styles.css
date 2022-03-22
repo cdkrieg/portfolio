@@ -46,7 +46,7 @@ header a:hover {
 .home-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 100px 100px;
+    padding: 200px 100px;
 }
 
 .home-cont-left{
@@ -82,7 +82,7 @@ header a:hover {
 .cont-about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 100px 100px;
+    padding: 200px 100px;
 }
 .cont-about-left{
 padding: 50px;
@@ -105,12 +105,12 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
-    padding: 100px;
+    padding: 200px;
 }
 .cont-project-1{
     padding: 20px 0;
     width: auto;
-    height: 150px;
+    height: 200px;
     background-color: ivory;
     color: darkgreen;
     text-align: center;
