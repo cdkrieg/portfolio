@@ -69,7 +69,7 @@ header a:hover {
     text-align: center;
 }
 
-.container-aboutme, .container-projects {
+.container-aboutme, .container-projects, .container-contact {
     padding: 5px;
     width: 200px;
     height: auto;
@@ -85,18 +85,23 @@ header a:hover {
     padding: 100px 100px;
 }
 .cont-about-left{
-padding: 100px;
+padding: 50px;
 }
 .cont-about-right{
 padding: 50px;
+width: 200px;
+height: auto;
+background-color: darkgreen;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
 }
 #wolfpic{
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .cont-projects{
     max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
@@ -105,7 +110,7 @@ padding: 50px;
 .cont-project-1{
     padding: 20px 0;
     width: auto;
-    height: 50px;
+    height: 150px;
     background-color: ivory;
     color: darkgreen;
     text-align: center;
@@ -115,8 +120,8 @@ padding: 50px;
 
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .home-container {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
