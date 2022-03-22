@@ -59,14 +59,13 @@ header a:hover {
     padding: 50px;
 }
 
-
-
 .container-me {
     padding: 2px;
     width: 300px;
     height: auto;
     background-color: darkgreen;
     text-align: center;
+    box-shadow: -8px 7px 2px 1px rgb(34 34 34 / 60%);
 }
 
 .container-aboutme, .container-projects, .container-contact {
@@ -77,6 +76,8 @@ header a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    box-shadow: -8px 7px 2px 1px rgb(34 34 34 / 60%);
+
 }
 
 .cont-about{
@@ -89,12 +90,14 @@ padding: 50px;
 }
 .cont-about-right{
 padding: 50px;
-width: 200px;
+width: 350px;
 height: auto;
 background-color: darkgreen;
 margin-left: auto;
 margin-right: auto;
-text-align: center;
+/* text-align: center; */
+box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%);
+
 }
 #wolfpic{
     max-width: 450px;
@@ -117,9 +120,43 @@ text-align: center;
 
 }
 
+#message{
+    word-break: break-word;
+}
 
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.form-left{
+    padding-top:  125px;
+    padding-left: auto;
+    padding-right: 50px;
+    justify-self: end;
+}
+.form-left label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
 
-
+}
+.form-right{
+    padding-top: 100px;
+    justify-self: start;
+    padding-left: 100px;
+}
+.submit{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 100px 0;
+}
+.submit input{
+    color: ivory;
+    background-color: darkgreen;
+    height: 3rem;
+    width: 5rem;
+}
 /* @media (max-width: 600px) {
     .home-container {
         grid-template-columns: repeat(1, 1fr);
