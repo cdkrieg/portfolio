@@ -5,7 +5,7 @@ html {
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
-    width: fit-content;
+    width: 100vw;
     box-sizing: border-box;
 }
 
@@ -46,9 +46,9 @@ header a:hover {
     opacity: 0.7;
     padding: 40px;
 }
-header a:active {
+/* header a:active {
     background-color: olivedrab;
-}
+} */
 .home{
     padding-top: 100px;
 }
@@ -56,15 +56,21 @@ header a:active {
 .home-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px 100px 200px 100px;
+    /* padding: 20px 100px 200px 100px; */
 }
 
 .home-cont-left{
-    padding: 400px 200px 400px 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 100px;
 }
 
 .home-cont-right{
-    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 100px;
 }
 
 .container-me {
@@ -81,9 +87,8 @@ header a:active {
     width: 200px;
     height: auto;
     background-color: darkgreen;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    margin: auto;
     box-shadow: -8px 7px 2px 1px rgb(34 34 34 / 60%);
 
 }
@@ -94,11 +99,13 @@ header a:active {
     padding: 200px 50px;
 }
 .cont-about-left{
+    display: flex;
     padding: 50px;
     justify-self: end;
     margin-right: 50px;
 }
 .cont-about-right{
+    display: flex;
     justify-self: start;
     padding: 50px 50px 50px 50px;
     margin-left: 125px;
@@ -169,8 +176,9 @@ header a:active {
     height: 3rem;
     width: 5rem;
 }
-/* @media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .home-container {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-} */
+}
