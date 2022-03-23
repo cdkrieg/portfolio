@@ -1,19 +1,24 @@
 
 html {
     color: white;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Caveat', cursive;
     font-weight: normal;
     font-style: normal;
     text-decoration: none;
     width: fit-content;
-
     box-sizing: border-box;
 }
 
-body {
-    opacity: 0.9;
+body /*.bg-image*/ {
+
     background-image: url("images/background trees.jpg");
-    width: fit-content;
+
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -36,23 +41,26 @@ header a {
 }
 header a:hover {
     background-color: seashell;
-    height: 30px;
     color: darkgreen;
+    transition: 0.5s;
+    opacity: 0.7;
+    padding: 40px;
 }
-.active {
+header a:active {
     background-color: olivedrab;
+}
+.home{
+    padding-top: 100px;
 }
 
 .home-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 200px 100px;
+    padding: 20px 100px 200px 100px;
 }
 
 .home-cont-left{
-    padding: 400px;
-    padding-left: 100px;
-    padding-right: 75px;
+    padding: 400px 200px 400px 400px;
 }
 
 .home-cont-right{
@@ -68,7 +76,7 @@ header a:hover {
     box-shadow: -8px 7px 2px 1px rgb(34 34 34 / 60%);
 }
 
-.container-aboutme, .container-projects, .container-contact {
+.container-home, .container-aboutme, .container-projects, .container-contact {
     padding: 5px;
     width: 200px;
     height: auto;
@@ -83,20 +91,22 @@ header a:hover {
 .cont-about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 200px 100px;
+    padding: 200px 50px;
 }
 .cont-about-left{
-padding: 50px;
+    padding: 50px;
+    justify-self: end;
+    margin-right: 50px;
 }
 .cont-about-right{
-padding: 50px;
-width: 350px;
-height: auto;
-background-color: darkgreen;
-margin-left: auto;
-margin-right: auto;
-/* text-align: center; */
-box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%);
+    justify-self: start;
+    padding: 50px 50px 50px 50px;
+    margin-left: 125px;
+    width: 350px;
+    height: auto;
+    background-color: darkgreen;
+    /* text-align: center; */
+    box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%);
 
 }
 #wolfpic{
@@ -108,7 +118,9 @@ box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: auto;
 }
 .cont-project-1{
     padding: 20px 0;
