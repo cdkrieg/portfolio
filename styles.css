@@ -14,7 +14,7 @@ html {
     background-image: url("images/background trees.jpg");
 
     filter: blur(3px);
-    height: 500vh;
+    height: 450vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,42 +47,38 @@ header a:hover {
     opacity: 0.7;
     padding: 40px;
 }
-/* header a:active {
-    background-color: olivedrab;
-} */
+
 main{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-10%);
     z-index: 2;
-    width: 100vw
+    width: 100vw;
+    display: grid;
+    grid-template-areas: '.container-home .container-home .container-home .container-home'
+    '.home-cont-left .home-cont-left .home-cont-right .home-cont-right'
+    '.container-aboutme .container-aboutme .container-aboutme .container-aboutme'
+    '.cont-about-left .cont-about-left .cont-about-right .cont-about-right'
+    '.container-projects .container-projects .container-projects .container-projects'
+    '.cont-project-1 .cont-project-2 .cont-project-3 .cont-project-4'
+    '.container-contact .container-contact .container-contact .container-contact'
+    '.form-left .form-left .form-right .form-right'
+    '.submit .submit .submit .submit' ;
 }
 
 .home{
     padding-top: 100px;
 }
 
-.home-container {
+ .home-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* padding: 20px 100px 200px 100px; */
-}
-
-.home-cont-left{
-    display: flex;
+    grid-template-areas: 'left right';
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: end;
-    margin-right: 100px;
+    padding: 100px 0 100px 0;
 }
 
-.home-cont-right{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-left: 100px;
-
-}
 .home-cont-right img{
     max-width: 400px;
 }
@@ -109,25 +105,17 @@ main{
 
 .cont-about{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 200px 50px;
+    grid-template-areas: 'left right';
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0 100px 0;
 }
-.cont-about-left{
-    display: flex;
-    padding: 50px;
-    justify-self: end;
-    margin-right: 50px;
-}
+
 .cont-about-right{
-    display: flex;
-    justify-self: start;
-    padding: 50px 50px 50px 50px;
-    margin-left: 125px;
     width: 350px;
     height: auto;
     background-color: darkgreen;
-    /* text-align: center; */
-    box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%);
+    box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%); 
 
 }
 #wolfpic{
@@ -135,17 +123,17 @@ main{
 }
 
 .cont-projects{
-    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 'left mid-left mid-right right';
     grid-gap: 20px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     margin: auto;
+    justify-content: space-evenly;
+    padding: 100px 0 100px 0;
+    
 }
-.cont-project-1{
+.cont-project-1, .cont-project-2, .cont-project-3, .cont-project-4{
     padding: 20px 0;
-    width: auto;
+    width: 300px;
     height: 200px;
     background-color: ivory;
     color: darkgreen;
@@ -159,30 +147,25 @@ main{
 
 .form{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'left right';
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0 100px 0;
+
 }
-.form-left{
-    padding-top:  125px;
-    padding-left: auto;
-    padding-right: 50px;
-    justify-self: end;
-}
+
 .form-left label{
     display: inline-block;
     width: 100px;
     text-align: right;
+    
 
 }
-.form-right{
-    padding-top: 100px;
-    justify-self: start;
-    padding-left: 100px;
-}
+
 .submit{
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 100px 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 .submit input{
     color: ivory;
@@ -190,12 +173,12 @@ main{
     height: 3rem;
     width: 5rem;
 }
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .home-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
 #home{
     scroll-margin-top: 125px;
