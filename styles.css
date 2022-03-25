@@ -19,7 +19,6 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-
 }
 
 header {
@@ -38,7 +37,6 @@ header a {
     padding: 40px;
     overflow: hidden;
     color: white;
-  
 }
 header a:hover {
     background-color: seashell;
@@ -56,15 +54,6 @@ main{
     z-index: 2;
     width: 100vw;
     display: grid;
-    grid-template-areas: '.container-home .container-home .container-home .container-home'
-    '.home-cont-left .home-cont-left .home-cont-right .home-cont-right'
-    '.container-aboutme .container-aboutme .container-aboutme .container-aboutme'
-    '.cont-about-left .cont-about-left .cont-about-right .cont-about-right'
-    '.container-projects .container-projects .container-projects .container-projects'
-    '.cont-project-1 .cont-project-2 .cont-project-3 .cont-project-4'
-    '.container-contact .container-contact .container-contact .container-contact'
-    '.form-left .form-left .form-right .form-right'
-    '.submit .submit .submit .submit' ;
 }
 
 .home{
@@ -100,7 +89,6 @@ main{
     text-align: center;
     margin: auto;
     box-shadow: -8px 7px 2px 1px rgb(34 34 34 / 60%);
-
 }
 
 .cont-about{
@@ -116,7 +104,6 @@ main{
     height: auto;
     background-color: darkgreen;
     box-shadow: 8px 7px 2px 1px rgb(34 34 34 / 60%); 
-
 }
 #wolfpic{
     max-width: 450px;
@@ -129,16 +116,14 @@ main{
     margin: auto;
     justify-content: space-evenly;
     padding: 100px 0 100px 0;
-    
 }
 .cont-project-1, .cont-project-2, .cont-project-3, .cont-project-4{
     padding: 20px 0;
-    width: 300px;
-    height: 200px;
+    width: calc(100vw / 4 - 60px);
+    height: auto;
     background-color: ivory;
     color: darkgreen;
     text-align: center;
-
 }
 
 #message{
@@ -151,15 +136,12 @@ main{
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 0 100px 0;
-
 }
 
 .form-left label{
     display: inline-block;
     width: 100px;
     text-align: right;
-    
-
 }
 
 .submit{
@@ -173,12 +155,84 @@ main{
     height: 3rem;
     width: 5rem;
 }
-/*@media screen and (max-width: 600px) {
-    .home-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+@media only screen and (max-width: 600px) {
+    main{
+        width: 100vw;
     }
-} */
+    .home-container {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        grid-gap: 50px;
+        padding-bottom: 0px;
+        
+        
+    }
+    .bg-image{
+        height: 700vh;
+    }
+    header{
+        width: 100vw;
+    }
+    header a{
+        padding: 10px;
+    }
+    .container-home, .container-aboutme, .container-projects, .container-contact{
+        align-items: center;
+        margin-left: calc(50vw - 100px);
+        margin-top: 130px;
+    }
+    .cont-about{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        grid-gap: 50px;
+        padding-bottom: 0px;
+    }
+    #wolfpic{
+        max-width: 75vw;
+    }
+    .cont-projects{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        
+        
+    }
+    .form{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    
+    }
+    .form-left{
+        display: flex;
+        width: 50vw;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+        
+    }
+    .form-left label{
+        text-align: start;
+    }
+    .form-right{
+        display: flex;
+        width: 75w;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    
+}
 
 #home{
     scroll-margin-top: 125px;
