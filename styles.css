@@ -70,7 +70,13 @@ main{
 
 .home-cont-right img{
     max-width: 400px;
+    border: 10px solid rgb(24, 107, 75);
+    border-radius: 75%;
+    box-sizing: border-box;
+    
+   
 }
+
 
 .container-me {
     padding: 2px;
