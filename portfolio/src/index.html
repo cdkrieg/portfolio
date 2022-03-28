@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="title" content="Christopher Krieg"/>
+        <meta name="keywords" content="HTML,CSS,JavaScript,MongoDB,Express,React,Node"/>
+        <meta name="description" content="Christopher Krieg is a full-stack web developer."/>
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link href="bootstrap/dist/bootstrap.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="styles.css"/> -->
+        <title>Christopher Krieg Portfolio</title>
+    </head>
+    <body>
+        <header >
+            <h2><nav>
+                <ul class="nav nav-tabs navbar-fixed-top">
+                        <div class="container-fluid" style="background-color: darkgreen;">
+                        <li role="presentation" class="active"><a href="#home">Home</a></li>
+                        <li role="presentation"><a href="#aboutme">About Me</a></li>
+                        <li role="presentation"><a href="#projects">My Projects</a></l>
+                        <li role="presentation"><a href="#contact">Say Hello!</a></li>
+                    </div>
+                </ul>
+            </nav></h2>
+        </header>
+        <div class="bg-image"></div>
+        <main>
+            <section class="home">
+                <div class="container-home">
+                    <h2 id="home">Home</h2>
+                </div>
+                <div class="home-container">
+                    <div class="home-cont-left">
+                        <div class="container-me">
+                            <p><h1>Christopher Krieg</h1></p>
+                            <h2><p>Web Developer</p></h2>
+                        </div>
+                    </div>
+                    <div class="home-cont-right">
+                        <img src="images/Chris uniform.jpeg"Picture of Christopher Krieg in Navy uniform" id="mepic" title="Christopher Krieg"/>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section class="aboutme">
+                <div class="container-aboutme">
+                    <h2 id="aboutme">About Me</h2>
+                </div>
+                <div class="cont-about">
+                    <div class="cont-about-left">
+                        <img src="images/wolf face.png" alt="Picture of Wolf" id="wolfpic" title="Wolf Picture">
+                    </div>
+                    <div class="cont-about-right">
+                        <ul>
+                            <li><h3>Retired Navy Veteran</h3></li>
+                            <li><h3>Proud Father</h3></li>
+                            <li><h3>Graduate of DevCodeCamp MERN Bootcamp</h3></li>
+                            <br>
+                            <li><h3>JavaScript, Node.JS, React.JS, Express.JS</h3></li>
+                            <li><h3>HTML, CSS, MongoDB, MySQL</h3></li>
+                            <br>
+                            <li><h3>Passionate about coding! </h3></li>
+                            <li><h3>I do what I love and love what I do!</h3></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </section>
+            <br>
+            <section class="projects">
+                <div class="container-projects">
+                    <h2 id="projects">MyProjects</h2>
+                </div>
+                <div class="cont-projects">
+                    <div class="cont-project-1">
+                        <h3>Day Trip Planner</h3>
+                        <br>
+                        <a href="https://github.com/cdkrieg/Daytripplanner.git">View on GitHub</a>"
+                        <h4>JavaScript</h4>
+                        <h4>Solo Project</h4>
+                    </div>
+                    <div class="cont-project-2">
+                        <h3>Most Wanted</h3>
+                        <br>
+                        <a href="https://github.com/cdkrieg/MostWanted.git">View on GitHub</a>"
+                        <h4>JavaScript</h4>
+                        <h4>Collaborative Project with Pedro Delgadillo</h4>
+                    </div>
+                    <div class="cont-project-3">
+                        <h3>ATM</h3>
+                        <br>
+                        <a href="https://github.com/cdkrieg/ATM_PROJECT.git">View on GitHub</a>
+                        <h4>JavaScript</h4>
+                        <h4>Solo Project</h4>
+                    </div>
+                    <div class="cont-project-4">
+                        <h3>Rock, Paper, Scissors, Lizard, Spock</h3>
+                        <br>
+                        <a href="https://github.com/n-roberge/rpsls_JS.git">View on GitHub</a>
+                        <h4>JavaScript</h4>
+                        <h4>Collaborative Project with Nick Robege</h4>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section class="contact">
+                <div class="container-contact">
+                    <h2 id="contact">Say Hello!</h2>
+                </div>
+                <br><br>
+                <form action="/form/submit" method="post">
+                    <div class="form">
+                        <div class="form-left">
+                            <label for="name">Name: </label>
+                            <input name="name" type="text" id="name" placeholder="Enter your name">                  
+                            <br><br>
+                            <label for="company">Company: </label>
+                            <input type="text" name="company" id="company" placeholder="Enter your company">
+                            <br><br>
+                            <label for="phone">Phone Number: </label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter your phone #">
+                            <br><br>
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-right">
+                            <label for="message">*What would you like to say?</label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit">
+                    </div>
+                </form>
+            </section>    
+        </main>
+    </body>
+</html>
