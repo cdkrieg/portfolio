@@ -9,6 +9,7 @@ const Home = () => {
         <h3>Home</h3>
       </div>
       <div className="container">
+        
         {/* <div className="container-left"> */}
           <h2>Christopher Krieg</h2>
           <h3>Web Developer</h3>
