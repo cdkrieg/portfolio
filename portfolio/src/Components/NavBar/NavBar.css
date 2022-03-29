@@ -1,0 +1,10 @@
+li {
+    list-style-type: none;
+    font-size: larger;
+    color: rgb(245, 242, 248);
+}
+.container {
+    background-color: rgb(110, 218, 110);
+    padding: 10px;
+    
+}

@@ -1,0 +1,18 @@
+.title{
+    background-color: darkgreen;
+    color: ivory;
+    text-align: center;
+}
+
+
+/* .container{
+    display: grid;
+    grid-template-areas: "left right";
+}
+.container-left{
+    background-color: darkgreen;
+    color: ivory;
+}
+img{
+    max-width: 350px;
+} */
