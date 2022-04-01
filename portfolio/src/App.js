@@ -4,18 +4,21 @@ import Home from "./Components/Home/Home";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <NavBar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path=".../AboutMe/AboutMe.js" element={<AboutMe />} />
-        <Route path=".../Projects/Projects.js" element={<Projects />} />
-        <Route path=".../Contact/Contact.js" element={<Contact />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path=".../AboutMe/AboutMe.js" element={<AboutMe />} />
+          <Route path=".../Projects/Projects.js" element={<Projects />} />
+          <Route path=".../Contact/Contact.js" element={<Contact />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
