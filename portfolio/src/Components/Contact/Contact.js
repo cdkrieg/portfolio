@@ -1,4 +1,5 @@
 import React from "react";
+import './Contact.css'
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
       </div>
       <br />
       <br />
-      <form className="form" role="form">
+      <form className="form">
         <div className="row">
           <div className="col-sm">
 
@@ -78,8 +79,8 @@ const Contact = () => {
         </div>
         <br />
         <br />
-        <div className="title">
-          <input type="submit"/>
+        <div className="submit">
+          <input type="submit" id="submit"/>
         </div>
       </form>
     </section>

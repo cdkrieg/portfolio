@@ -1,4 +1,6 @@
 import React from "react";
+import './AboutMe.css'
+import wolf from '../images/wolf face.png'
 
 const AboutMe = () => {
   return (
@@ -7,7 +9,7 @@ const AboutMe = () => {
         <h3>About Me</h3>
       </div>
       <div className="container">
-      <img src="./wolf face.png" title="Wolf Picture" />
+      <img src={wolf} title="Wolf Picture" alt="wolf face"/>
         <ul>
           <li>
             <h3>Retired Navy Veteran</h3>

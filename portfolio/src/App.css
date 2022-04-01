@@ -1,8 +1,10 @@
 .App{
     height: 100vh;
+    width: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-image: url('./Components/images/background trees.jpg');
     z-index: 0;
+    font-family: fantasy;
 }

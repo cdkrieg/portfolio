@@ -1,4 +1,31 @@
-form label {
-    display: inline-block;
-    width: 150px;
+label {
+  width: fit-content;
+  background-color: darkgreen;
+  color: ivory;
+}
+.form-control {
+  max-width: 60%;
+  margin-left: min(30%,150px);
+  margin-bottom: 5px;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+  padding: 5px;
+
+}
+#submit{
+    display: block;
+    border: none;
+    background: darkgreen;
+    color: ivory;
+    max-width: fit-content;
+    margin: auto;
+    padding: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: larger;
 }
